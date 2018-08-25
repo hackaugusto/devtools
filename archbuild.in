@@ -41,6 +41,8 @@ done
 
 check_root SOURCE_DATE_EPOCH
 
+umask 0022
+
 # Pass all arguments after -- right to makepkg
 makechrootpkg_args+=("${@:$OPTIND}")
 
